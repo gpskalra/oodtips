@@ -1,0 +1,11 @@
+Make code understandable through public API.
+Information hiding - Hide implementation.
+Command query separation - Use void methods that have side effects (change state) and methods with return types to return data and not have side effects.
+Postels law - Be conservative in what you send, liberal in what you accept. 
+Protection of invariants - use pre/post checks and make invalid states impossible.
+Disallow initialization to invalid state - pass everything necessary to constructor.
+Use private setters to disallow valid to invalid state transition.
+Input - Static type system should suffice for pre-conditions wherever possible. Use run-time guard clauses when they do not. Example - Non-nullable reference type does not exist, so check for null string input.
+Input - If you understand what the client meant, accept the input.
+Fail fast - Use Guard clauses to fail fast. Give detailed exception message describing problem with the input and how to fix it.
+Output - Give good guarantee through clear return type. Don't return null. Use Maybe<T> as a possible solution.
