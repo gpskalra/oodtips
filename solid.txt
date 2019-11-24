@@ -1,0 +1,10 @@
+1. Make you productive by making code more maintainable, focus is on decomposition and decoupling.
+2. SOLID is a reaction to certain code/design smells.
+3. It is hard to measure.
+4. Design smells that solid addresses
+- Rigidity - Design is difficult to change. Generally design should be able to change when requirements change. Should be able to meet new requirements.
+- Fragility - Easy to break. A new unfamiliar developer can easily break the design.
+- Immobility - Difficult to reuse.
+- Viscosity - difficult to do the right thing.
+- Needless complexity (over design).
+5. Apply all or none - Apply all principles to small chunk of code base > Apply one principle to a code base. All principles work together.
