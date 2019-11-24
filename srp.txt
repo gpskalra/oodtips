@@ -1,0 +1,8 @@
+1. Single responsibility principle - A class should have a single responsibility.
+2. Responsibility defined as "reason to change". Each class should have a single reason to change.
+3. Other ways of putting it 
+- Separation of concerns - basic correctness, logging, caching or performance .... We should be able to vary each of the concerns independently of other concerns.
+- Each class should do one thing and do it well. Unix is a great example.
+4. Orchestration is also a reason to change/responsibility. A class can have a responsibility of making some other classes work together to achieve something.
+5. A logging class makes sure that we choose to use a different logging framework, we just have to make changes to just one class.
+6. A caching class makes sure that we need to change only one class if we choose to use a different caching mechanism - dictionary, ....
