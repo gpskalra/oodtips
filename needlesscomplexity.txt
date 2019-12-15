@@ -1,0 +1,5 @@
+1. Needless complexity - Developers have a tendency to solve specific problems with general solutions. Leads to coupling and complexity. Instead of being general, code should be specific.
+2. Making code specific can lead to code duplication. The solution is to create specific code classes first and discover abstractions (interfaces/abstract classes) on the go as the system grows.
+3. Reused abstraction principle - If abstractions are not being reused, then you have poor abstractions.
+4. Abstraction - Elimination of the irrelevant and amplification of the essential.
+5. Rule of three - Don't introduce general purpose solution (example - helper method, abstraction) until you see three examples that fit.
