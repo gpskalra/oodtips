@@ -1,0 +1,6 @@
+Open closed principle - A class should be open for extensibility but closed for modification.
+Why ? - Clients of a shipped class may need to change in a ripple effect if you change behavior of the class.
+Inheritance based approaches (although composition should be preferred over inheritance) -
+- Make methods virtual so child class can define new behavior.
+- If methods use members that you want to replace with custom members (a custom logging class, a custom cache class are examples), make those members into virtual read only properties (These are essentially factory methods.) and override those properties in a child class. Make the methods in the base class use properties instead of directly using the fields.
+
