@@ -1,0 +1,5 @@
+1. Interface Segregation Principle - Clients should not be forced to depend on methods they do not use. "Clients" define an interface. Clients needs/owns/defines an interface.
+2. Prefer role interface (very few members) over header interfaces (e.g extracted interfaces we saw earlier)
+3. Single member interfaces can also be used. 
+4. ISP helps resolve LSP violations.
+5. Define interfaces (features) in a granular way so that if you dont want a feature, just dont implement that interface - ISP helps removing features from code.
