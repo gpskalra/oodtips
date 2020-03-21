@@ -1,0 +1,12 @@
+1. OCP says - "make a code base append only". How ? One approach - strangler pattern!
+2. Liskov substitution principle - subtypes must be substitutable for their base types. Relates to polymorphism.
+3. Another way to put it - Consume any implementation (of a given interface!) without changing the correctness of the system. 
+Can change behavior (polymorphism)! 
+Correctness ~ superset of all legal behaviors! 
+Basic correctness example - don't crash the system!
+4. Violation signs - 
+NotSupportedException - Using ICollection<T> in .NET and replacing List<T> to ReadOnlyCollection<T> - system can start throwing this exception now!
+Lot of Downcasts - If you have a lot and your logic depends on the whether the downcast gives a specific type, you are violating LSP if you do not handle all possible results of the downcast.
+Extracted interfaces - Most often, extracting all methods of a class to an interface can in future cause violations. Violations generally happen when you want to remove features  when writing an implementation (ReadOnlyCollection is an example, throws notsupportedexception for - add, clear, remove methods).
+5. Reused abstraction principle compliance is a strong indication of Liskov Substition principle compliance.
+
