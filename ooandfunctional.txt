@@ -1,0 +1,4 @@
+oopandfunctional
+1. Objects are data with behavior, Closures in functional programming are behavior with data.
+2. Closures are light weight in the sense that you do not need a name for the class/interface but only a function name.
+3. Following SOLID takes a code closer to functional code. It can now be more easily converted to functional code.
