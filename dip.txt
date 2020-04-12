@@ -1,0 +1,5 @@
+1. DIP - High level modules should not depend on low level modules. Both should depend on abstractions. Abstractions should not depend on details. Details should depend on abstractions.
+2. If a language only supports single inheritance and not multiple inheritance, favor composition and interfaces over inheritance.
+3. Composite design pattern is one way of using composition. Works well for commands.
+4. The decorator pattern can be used for both commands and queries. (Example - A cache implementation decorating an IReader as well as an IWriter by adding caching functionality to the actual reading and writing to the backing store). By composing both a reader and writer, a decorator is simulating multiple inheritance.
+5. Let the orchestrating class (high level module) be constructed from/composed of interfaces. Pass in appropriate implementations of the interfaces (low level modules) when constructing the high level module.
