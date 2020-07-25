@@ -1,0 +1,2 @@
+1. Encapsulation basically means to design classes in such a way that objects are battle-hardened entities that can withstand anything that is thrown at them and still be in valid states. When they do fail, they fail fast and be verbose in telling why they failed to the client.
+2. The SOLID principles together with encapsulation and the patterns associated with SOLID give you the tools to write more maintainable/readable/easier to reason with code.
